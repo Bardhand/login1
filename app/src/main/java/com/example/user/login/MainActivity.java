@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -14,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     EditText loginid,password;
     Button submit;
-
+    CheckBox checkBox2;
     String myLoginid, myPassword;
 
 
@@ -23,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        init();
         findview();
 
     }
@@ -47,6 +48,9 @@ public class MainActivity extends AppCompatActivity {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(checkBox2.isChecked()){
+                    init();
+                }
                 doSubmit();
             }
         });
@@ -87,6 +91,9 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
 
         }
+
     }
+
+
 
 }

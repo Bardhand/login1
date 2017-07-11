@@ -68,6 +68,20 @@
             android:layout_marginTop="10dp"
             android:orientation="horizontal">
 
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="紀錄" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="不記錄" />
+
             <Button
                 android:id="@+id/submit"
                 android:layout_width="wrap_content"
